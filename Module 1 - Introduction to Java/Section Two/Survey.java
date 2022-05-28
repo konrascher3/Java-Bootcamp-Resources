@@ -6,6 +6,8 @@ public class Survey {
 
     public static void main(String[] args) {
 
+        int counter = 0;
+
         System.out.println("Welcome! Thank you for taking the survey!");
 
         // Instantiate a new scanner that listens for user-input
@@ -15,17 +17,21 @@ public class Survey {
 
         // Java waits for the user to input a string
         String name = scan.nextLine();
+        counter++;
 
         System.out.println("How old are you?");
 
         // Java waits for the user to input a number
         int age = scan.nextInt();
+        counter++;
 
         System.out.println("How much do you spend on coffee?");
 
         // Java waits for the user to input a double
         double coffeePrice = scan.nextDouble();
+        counter++;
 
+        System.out.println("Thank you for answering " + counter + " questions!");
         System.out.println(name + ", you are " + age + " years old!");
         System.out.println("You spend $" + coffeePrice + " on coffee.");
 
